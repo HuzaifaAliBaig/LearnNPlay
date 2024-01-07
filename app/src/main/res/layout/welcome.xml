@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/background">
+
+    <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:background="@drawable/roundedrectblue"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="114dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="75dp">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp">
+
+                <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/rect1blue" />
+
+                <ImageView
+                        android:layout_width="121dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/logomain"
+                        android:paddingLeft="3dp"
+                        android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/welcomeusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/play"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectblue"
+                android:text="PLAY"
+                android:textColor="#fff"
+                android:padding="16dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginBottom="302dp"
+                android:layout_width="200dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+</FrameLayout>

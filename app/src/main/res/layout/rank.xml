@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:weightSum="1"
+             android:orientation="vertical"
+             android:background="@drawable/background2">
+
+    <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/textView2"
+                android:text="Rank        Name        Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_below="@+id/EngRank"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal|bold"/>
+
+        <TextView
+                android:id="@+id/EngRank"
+                android:text="English Rank :-"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        <TextView
+                android:id="@+id/MathRank"
+                android:text="Math Rank :-"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:textStyle="normal|bold"
+                android:layout_alignTop="@+id/Rankreturn"
+                android:layout_alignLeft="@+id/EngRank"
+                android:layout_alignStart="@+id/EngRank"
+                android:layout_marginTop="47dp"/>
+
+        <TextView
+                android:id="@+id/Rankreturn"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectblack"
+                android:text="Return"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:textSize="25dp"
+                android:layout_toRightOf="@+id/MathRank"
+                android:layout_marginLeft="-183dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true">
+
+            <TextView
+                    android:id="@+id/mrank"
+                    android:text="TextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:id="@+id/mname"
+                    android:text="TextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            <TextView
+                    android:id="@+id/mscore"
+                    android:text="TextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:text="Rank        Name        Score"
+                android:layout_below="@+id/MathRank"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignRight="@+id/Rankreturn"
+                android:layout_alignEnd="@+id/Rankreturn">
+
+            <TextView
+                    android:id="@+id/erank"
+                    android:text="TextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:id="@+id/ename"
+                    android:text="TextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:id="@+id/escore"
+                    android:text="TextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

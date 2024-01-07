@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.learnnplay">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/logol"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <activity
+                android:name=".main"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="Learn n Play (By ~Huzi)"
+                android:theme="@style/FullscreenTheme"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".signin" android:exported="false" />
+        <activity android:name=".signup" android:exported="false" />
+        <activity android:name=".welcome" android:exported="false" />
+        <activity android:name=".imagechoose" android:exported="false" />
+        <activity android:name=".profile" android:exported="false" />
+        <activity android:name=".Categories" android:exported="false" />
+        <activity android:name=".MathGame" android:exported="false" />
+        <activity android:name=".EnglishGame" android:exported="false" />
+        <activity android:name=".Rank" android:exported="false" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:baselineAligned="false"
+             android:weightSum="1"
+             android:background="@drawable/background">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fullscreen_content" />
+
+    <RelativeLayout
+            android:layout_width="438dp"
+            android:layout_height="617dp">
+
+        <TextView
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/life"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="52dp"
+                android:layout_below="@+id/mathreturn"
+                android:layout_toRightOf="@+id/imageView6"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:id="@+id/mathreturn"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/Operator"
+                android:layout_toStartOf="@+id/Operator" tools:ignore="NotSibling">
+
+            <ImageView
+                    android:id="@+id/playback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RETURN"
+                    android:textSize="22dp"
+                    android:textColor="#ADCCE2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:text="3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/square"
+                android:id="@+id/mChoice4"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:layout_alignBaseline="@+id/mChoice3"
+                android:layout_alignBottom="@+id/mChoice3"
+                android:layout_alignLeft="@+id/mChoice2"
+                android:layout_alignStart="@+id/mChoice2"
+                android:padding="10dp" />
+
+        <TextView
+                android:text="4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/square"
+                android:id="@+id/mChoice3"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                android:layout_below="@+id/mChoice1"
+                android:layout_alignRight="@+id/mChoice1"
+                android:layout_alignEnd="@+id/mChoice1" />
+
+        <TextView
+                android:text="2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/square"
+                android:id="@+id/mChoice1"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:padding="10dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginStart="69dp"
+                android:layout_alignBaseline="@+id/mChoice2"
+                android:layout_alignBottom="@+id/mChoice2"
+                android:layout_toRightOf="@+id/mChoice2"
+                android:layout_toEndOf="@+id/mChoice2" />
+
+        <ImageView
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/score"
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/mChoice1"
+                android:layout_toEndOf="@+id/mChoice1"
+                android:layout_marginTop="19dp" />
+
+        <TextView
+                android:text="1"
+                android:background="@drawable/square"
+                android:id="@+id/mChoice2"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:layout_below="@id/imageView7"
+                android:layout_toRightOf="@+id/mathreturn"
+                android:layout_toEndOf="@+id/mathreturn"
+                android:layout_marginTop="86dp" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mChoice1"
+                android:layout_toLeftOf="@+id/imageView7"
+                android:layout_toStartOf="@+id/imageView7"
+                android:layout_marginBottom="43dp">
+
+            <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Operand1"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_alignBaseline="@+id/Operator"
+                    android:layout_alignBottom="@+id/Operator"
+                    android:layout_toLeftOf="@+id/life"
+                    android:layout_toStartOf="@+id/life"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Operator"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_alignBottom="@+id/Operand2"
+                    android:layout_alignRight="@+id/refresh"
+                    android:layout_alignEnd="@+id/refresh"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Operand2"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_alignBaseline="@+id/Equal"
+                    android:layout_alignBottom="@+id/Equal"
+                    android:layout_toLeftOf="@+id/Equal"
+                    android:layout_toStartOf="@+id/Equal"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="="
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Equal"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_alignBaseline="@+id/Result"
+                    android:layout_alignBottom="@+id/Result"
+                    android:layout_toRightOf="@+id/Choice3"
+                    android:layout_toEndOf="@+id/Choice3"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Result"
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginBottom="13dp"
+                    android:layout_above="@+id/Choice1"
+                    android:layout_alignLeft="@+id/imageView7"
+                    android:layout_alignStart="@+id/imageView7"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/score"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:layout_alignBaseline="@+id/life"
+                android:layout_alignBottom="@+id/life"
+                android:layout_toRightOf="@+id/imageView7"
+                android:layout_toEndOf="@+id/imageView7" />
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/heart"
+                android:id="@+id/imageView6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_alignBottom="@+id/life"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</FrameLayout>

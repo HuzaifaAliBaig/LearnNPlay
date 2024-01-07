@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/profile">
+
+    <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            <ImageView
+                    android:id="@+id/signinback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:id="@+id/Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="22dp"
+                    android:textColor="#ADCCE2"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/signout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect"
+                android:text="SIGNOUT"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginBottom="26dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        <ImageView
+                android:id="@+id/propic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="33dp"
+                android:layout_below="@+id/back"
+                android:layout_centerHorizontal="true" />
+
+        <TextView
+                android:id="@+id/usernameprof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@android:color/background_light"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:paddingBottom="40dp"
+                android:textStyle="bold"
+                android:layout_above="@+id/myTextView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="200dp" />
+
+        <TextView
+                android:id="@+id/scoreofprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@+id/usernameprof"
+                android:layout_alignLeft="@+id/propic"
+                android:layout_alignStart="@+id/propic"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" />
+
+        <TextView
+                android:id="@+id/Engscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="@android:color/background_light"
+                android:layout_above="@+id/scoreofprofile"
+                android:layout_alignLeft="@+id/scoreofprofile"
+                android:layout_alignStart="@+id/scoreofprofile" />
+
+        <TextView
+                android:id="@+id/myTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Math :"
+                android:textColor="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginBottom="57dp"
+                android:layout_above="@+id/signout"
+                android:layout_toLeftOf="@+id/signout"
+                android:layout_toStartOf="@+id/signout" />
+
+        <TextView
+                android:id="@+id/myTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English :"
+                android:textColor="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_above="@+id/myTextView2"
+                android:layout_alignLeft="@+id/myTextView2"
+                android:layout_alignStart="@+id/myTextView2" />
+
+        <TextView
+                android:id="@+id/Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_alignTop="@+id/back"
+                android:layout_toRightOf="@+id/signout"
+                android:layout_toEndOf="@+id/signout" />
+    </RelativeLayout>
+
+</FrameLayout>
